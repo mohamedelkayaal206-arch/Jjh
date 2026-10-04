@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/(login|register|my-requests|admin|settings)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(login|register|my-requests|admin|settings)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}
